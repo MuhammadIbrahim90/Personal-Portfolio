@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body
+    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+    class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gray-800 shadow z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">Muhammad Ibrahim</h1>
+            <div class="space-x-4">
+                <a href="#home" class="hover:text-blue-400">Home</a>
+                <a href="#about" class="hover:text-blue-400">About</a>
+                <a href="#skills" class="hover:text-blue-400">Skills</a>
+                <a href="#education" class="hover:text-blue-400">Education</a>
+                <a href="#projects" class="hover:text-blue-400">Projects</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gray-900 pt-20" data-aos="fade-up">
+        <div class="text-center">
+            <img style="height: 300px;" src="./img/444.png" alt="Coder" class="mx-auto rounded-full mb-6">
+            <h2 class="text-4xl font-bold mb-2">Hi There,
+                I'm Muhammad Ibrahim</h2>
+            <p class="text-lg text-gray-400"> I am into frontend development </p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-20 bg-gray-800" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center mb-10">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/user-male-circle.png" alt="About Me Icon"
+                    class="w-8 h-8 mr-2">
+                <p class="text-4xl font-bold text-white">About Me</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+
+                <!-- Image Side -->
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="./img/Picsart_25-03-31_14-09-41-709.jpg" alt="Your Image"
+                        class="w-70 h-60 rounded-full shadow-lg">
+                </div>
+
+                <!-- Info Side -->
+                <div class="md:w-1/2 text-center md:text-left text-gray-300 mt-6">
+                    <h1 class="text-3xl font-bold text-white mb-2 test">Muhammad Ibrahim</h1>
+                    <h4 class="text-xl text-teal-400 mb-4">Frontend Developer</h4>
+                    <p class="mb-4"> Experienced Frontend Developer proficient in building responsive, high-performance
+                        web applications using HTML, CSS, Tailwind CSS, JavaScript, Bootstrap, Firebase, and
+                        Netlify.
+                    </p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-gray-900 p-6" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+
+            <!-- Heading with Icon -->
+            <div class="flex items-center justify-center mb-10">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/maintenance.png" alt="Skills Icon"
+                    class="w-8 h-8 mr-2">
+                <h2 class="text-3xl font-bold text-white">Skills</h2>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <!-- HTML -->
+                <div class="bg-gray-800 p-4 rounded-xl flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML" />
+                    <p class="mt-2 text-white">HTML</p>
+                </div>
+                <!-- CSS -->
+                <div class="bg-gray-800 p-4 rounded-xl flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/48/css3.png" alt="CSS" />
+                    <p class="mt-2 text-white">CSS</p>
+                </div>
+                <!-- JavaScript -->
+                <div class="bg-gray-800 p-4 rounded-xl flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript" />
+                    <p class="mt-2 text-white">JavaScript</p>
+                </div>
+                <!-- Tailwind CSS -->
+                <div class="bg-gray-800 p-4 rounded-xl flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS" />
+                    <p class="mt-2 text-white">Tailwind CSS</p>
+                </div>
+                <!-- Bootstrap -->
+                <div class="bg-gray-800 p-4 rounded-xl flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/48/bootstrap.png" alt="Bootstrap" />
+                    <p class="mt-2 text-white">Bootstrap</p>
+                </div>
+                <!-- Firebase -->
+                <div class="bg-gray-800 p-4 rounded-xl flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase" />
+                    <p class="mt-2 text-white">Firebase</p>
+                </div>
+                <!-- GitHub -->
+                <div class="bg-gray-800 p-4 rounded-xl flex flex-col items-center">
+                    <img src="https://img.icons8.com/ios-glyphs/48/ffffff/github.png" alt="GitHub" />
+                    <p class="mt-2 text-white">GitHub</p>
+                </div>
+                <!-- Netlify -->
+                <div class="bg-gray-800 p-4 rounded-xl flex flex-col items-center">
+                    <img src="https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png" alt="Netlify"
+                        class="w-12 h-12" />
+                    <p class="mt-2 text-white">Netlify</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-20 bg-gray-800 p-6" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+
+            <!-- Heading with Education Icon -->
+            <div class="flex items-center justify-center mb-10">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/graduation-cap.png" alt="Education Icon"
+                    class="w-8 h-8 mr-2 mt-2">
+                <h2 class="text-3xl font-bold text-white">Education</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-700 p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-bold text-white mb-2">Intermediate</h3>
+                    <p class="text-gray-300">Formen College Nazimabad - 2023 to 2025</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-bold text-white mb-2">Web Developer</h3>
+                    <p class="text-gray-300">Saylani Mass IT Training - 2024 to 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-gray-900 p-6" data-aos="fade-up">
+        <div class="container  mx-auto text-center">
+
+            <!-- Heading with Icon -->
+            <div class="flex items-center justify-center mb-10">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/project.png" alt="Projects Icon"
+                    class="w-8 h-8 mr-2">
+                <h2 class="text-3xl font-bold text-white">Projects</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                <!-- 1 -->
+                <a href="https://github-user-finder-omega-sandy.vercel.app" target="_blank"
+                    class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition  shadow-md shadow-white">
+                    <img src="./img/000.PNG" alt="Project 1">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Github-user-finder</h3>
+                        <p class="text-gray-400">Built with HTML, Tailwind CSS, and JavaScript to search and display
+                            GitHub user profiles in a beautiful UI.</p>
+                    </div>
+                </a>
+
+
+                <!-- 2 -->
+                <a href="https://product-store-azure.vercel.app" target="_blank"
+                    class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition  shadow-md shadow-white">
+                    <img src="./img/product.PNG" alt="Project 1">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">E-commerce-Product-store</h3>
+                        <p class="text-gray-400">Responsive E-commerce-Product-store built with HTML, CSS, JavaScript,
+                            and Tailwind CSS using a custom API
+
+                        </p>
+                    </div>
+                </a>
+                <!-- 3 -->
+
+                <a href="https://birthday-calculator-rosy.vercel.app/" target="_blank"
+                    class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition  shadow-md shadow-white">
+                    <img src="./img/birthdaYCalculator.PNG" alt="Project 1">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Birthday Calculator</h3>
+                        <p class="text-gray-400">A responsive Birthday Age Calculator built with HTML, Tailwind CSS, and
+                            JavaScript.
+
+                        </p>
+                    </div>
+                </a>
+
+
+                <!-- 4 -->
+
+                <a href="https://curreny-convert.vercel.app/" target="_blank"
+                    class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition  shadow-md shadow-white">
+                    <img src="./img/currenyConvert.PNG" alt="Project 1">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Curreny-Convert</h3>
+                        <p class="text-gray-400">A responsive currency converter app built with HTML, Tailwind CSS, and
+                            JavaScript using real-time exchange rate API.
+
+                        </p>
+                    </div>
+                </a>
+
+
+                <!-- 5 -->
+
+                <a href="https://digital-clock-three-umber.vercel.app/" target="_blank"
+                    class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition  shadow-md shadow-white">
+                    <img src="./img/time.PNG" alt="Project 1">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Digital-Clock</h3>
+                        <p class="text-gray-400">A responsive "Digital clock" built with HTML, Tailwind CSS, and
+                            JavaScript.
+
+                        </p>
+                    </div>
+                </a>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-gray-800" data-aos="fade-up">
+    <div class="container mx-auto px-4 text-center">
+        <!-- Heading -->
+        <div class="mb-10 flex justify-center items-center gap-3">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/secured-letter.png" alt="Contact Icon" class="w-8 h-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Contact Me</h2>
+        </div>
+
+        <!-- Info -->
+        <p class="text-gray-300 text-lg mb-2 text-2xl">
+            Email : <a href="#" class="text-teal-400 hover:underline"><samp>ibrahim968712@gmail.com</samp></a>
+        </p>
+        <p class="text-gray-300 text-lg mb-6 text-2xl">Adress : <samp>karachi,pakistan</samp></p>
+
+        <!-- Social Links -->
+        <div class="flex justify-center gap-6 mt-6">
+            <!-- GitHub -->
+            <a href="https://github.com/MuhammadIbrahim90" target="_blank" class="hover:scale-110 transition transform duration-300">
+                <img src="https://img.icons8.com/ios-glyphs/50/ffffff/github.png" alt="GitHub" class="w-8 h-8">
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com/yourusername" target="_blank" class="hover:scale-110 transition transform duration-300">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" class="w-8 h-8">
+            </a>
+            <!-- Facebook -->
+            <a href="https://facebook.com/yourusername" target="_blank" class="hover:scale-110 transition transform duration-300">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" class="w-8 h-8">
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/muhammadibrahim90" target="_blank" class="hover:scale-110 transition transform duration-300">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-center py-4">
+    <p class="text-sm text-gray-400">Made by <span class="text-teal-400 font-semibold">Muhammad Ibrahim</span></p>
+</footer>
+
+    <script>
+        AOS.init({ duration: 1000 });
+    </script>
+</body>
+
+</html>
